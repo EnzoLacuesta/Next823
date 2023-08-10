@@ -1,0 +1,106 @@
+.body{
+  margin: 0%;
+  padding: 0%;
+}
+.app{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column: auto;
+  height: 100vh;
+}
+.nav{
+  display: grid;
+  align-items: center;
+  grid-template-columns:20% 60% 20%;
+  height: 10vh;
+  border: black 1px solid;
+  color:rgb(43, 220, 61);
+  background-color: rgb(18, 17, 17);
+  position: sticky;
+  top: 2px;
+}
+.nav > div{
+  display: grid;
+  justify-content: end;
+  margin-right: 2rem;
+}
+.ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.ulOpen{
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  row-gap: 2rem;
+}
+.openButton{
+  display: flex;
+  justify-content: end;
+  margin: 1rem;
+}
+.li {
+  font-family: "Gill Sans", sans-serif;
+  position: relative;
+  overflow: hidden ;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(43, 220, 61);
+
+  }
+
+  .liOpen {
+    font-family: "Gill Sans", sans-serif;
+    position: relative;
+    overflow: hidden ;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(43, 220, 61);
+    margin-bottom: 4rem;
+    }
+.liOpen:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -90%;
+    width: 90%;
+    height: 2px;
+    background: rgb(43, 220, 61);
+    transition: left .7s;
+    }
+.liOpen:hover:after {
+    left: 0;
+    }
+.li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -90%;
+  width: 90%;
+  height: 2px;
+  background: rgb(43, 220, 61);
+  transition: left .7s;
+  }
+  .li:hover:after {
+  left: 0;
+  }
+  .logo{
+    font-size: 2rem;
+  }
+  @media(max-width:400px){
+    .logo{
+      font-size: 1rem;
+    }
+    
+  }
+.listOpen{
+  background-color: black;
+  margin-left: 40%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  position: absolute;
+  left: 36%;
+}
